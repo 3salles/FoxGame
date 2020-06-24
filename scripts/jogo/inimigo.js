@@ -2,7 +2,7 @@ class Inimigo extends Animacao {
   constructor(matriz, imagem, x, largura, altura, larguraSprite, alturaSprite) {
     super(matriz, imagem, x, largura, altura, larguraSprite, alturaSprite)
     
-    this.velocidade = 20;
+    this.velocidade = 40;
   }
   
   move() {
