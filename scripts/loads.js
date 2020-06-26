@@ -1,7 +1,7 @@
 function preload() {
   imagemCenarios = [];
   for(let i = 0; i < cenarioCount; i++){
-    imagemCenarios.push(loadImage(`imagens/cenario/layer${1+i}.png`))
+    imagemCenarios.push(loadImage(`imagens/cenario/fase1/layer${1+i}.png`))
   }
   imagemPersonagem = loadImage('imagens/personagem/correndo.png');
   imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
@@ -13,4 +13,5 @@ function preload() {
   somelemorrer = loadSound('sons/gameover.mp3');
   imagemTelaInicial = loadImage('imagens/cenario/telaInicial.png');
   fonteTelaInicial = loadFont ('imagens/assets/fonteTelaInicial.otf');
+  fonteGameOver = loadFont('imagens/assets/fonteGameOver.ttf');
 }

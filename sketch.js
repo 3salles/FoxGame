@@ -4,12 +4,15 @@ function setup() {
   somDoJogo.loop();
   jogo = new Jogo();
   telaInicial = new TelaInicial();
+  gameOver = new GameOver();
   jogo.setup();
   cenas = {
     jogo, 
-    telaInicial
+    telaInicial,
+    gameOver
   }
   botaoGerenciador = new BotaoGerenciador('Iniciar',width/2, height/2);
+  botaoReiniciar =  new BotaoGerenciador('Reiniciar',width/2, height/2);
 }
 
 function keyPressed() {

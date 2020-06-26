@@ -1,10 +1,10 @@
-let imagemgameover, imagemCenarios, imagemPersonagem, imagemInimigo, imagemInimigoGrande, imagemTelaInicial;
+let imagemgameover, imagemCenarios, imagemPersonagem, imagemInimigo, imagemInimigoGrande, imagemTelaInicial, imagemGameOver;
 let somelemorrer, somdoPulo, somDojogo;
 let InimigoVoador, InimigoGrande, personagem, inimigo;
 let cenarios, pontuacao;
-let fonteTelaInicial, jogo, botaoGerenciador, telaInicial;
+let fonteTelaInicial, fonteGameOver, jogo, botaoGerenciador, telaInicial, botaoReiniciar;
 let cenas, cenaAtual = 'telaInicial';
-let gameover;
+let gameOver;
 
 let inimigosAtual = 0; 
 

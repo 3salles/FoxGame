@@ -58,11 +58,10 @@ class Jogo {
     }
 
     if (personagem.estaColidindo(inimigo)) {
-      image(imagemgameover, width / 2 - 200, height / 2.5);
+      gameOver.draw();
       somDoJogo.stop();
       somelemorrer.play();
       noLoop();
-
     }
   }
 
