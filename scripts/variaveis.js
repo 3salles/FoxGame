@@ -4,11 +4,11 @@ let InimigoVoador, InimigoGrande, personagem, inimigo;
 let cenarios, pontuacao;
 let fonteTelaInicial, fonteGameOver, jogo, botaoGerenciador, telaInicial, botaoReiniciar;
 let cenas, cenaAtual = 'telaInicial';
-let gameOver, vida;
+let gameOver, vida, cenariosIntroducao, imagemIntroducao;
 
 let fita;
 
-const cenarioCount = 5;
+const cenarioCount = 5, introCount = 6;
 const matrizPersonagem = geraMatrizDePosicoes(1, 4, 45, 35), matrizInimigo  = geraMatrizDePosicoes(7, 4, 104, 104); 
 const matrizInimigoVoador = geraMatrizDePosicoes(5, 3, 200, 150), matrizInimigoGrande = geraMatrizDePosicoes(5, 5, 400, 400);
-const inimigos = [];
+let inimigos = [];

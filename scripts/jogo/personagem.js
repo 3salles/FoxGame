@@ -34,7 +34,7 @@ class Personagem extends Animacao {
     setTimeout(() => { 
       this.invencivel = false;
       this.isBlinking = false; 
-    }, 2000);
+    }, 1000);
   }
   estaColidindo(inimigo) {
     if (this,this.invencivel){ return false;}

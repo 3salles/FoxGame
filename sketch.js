@@ -12,7 +12,6 @@ function setup() {
     gameOver
   }
   botaoGerenciador = new BotaoGerenciador('Iniciar',width/2, height/2);
-  botaoReiniciar =  new BotaoGerenciador('Reiniciar',width/2, height/2);
 }
 
 function keyPressed() {

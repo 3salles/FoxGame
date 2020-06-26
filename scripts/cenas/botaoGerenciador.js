@@ -16,5 +16,7 @@ class BotaoGerenciador {
   _alteraCena(){
     this.botao.remove();
     cenaAtual = 'jogo';
+    jogo.setup();
+    loop();
   }
 }

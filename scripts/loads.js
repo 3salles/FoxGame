@@ -1,4 +1,5 @@
 function preload() {
+
   imagemCenarios = [];
   for(let i = 0; i < cenarioCount; i++){
     imagemCenarios.push(loadImage(`imagens/cenario/fase1/layer${1+i}.png`))
