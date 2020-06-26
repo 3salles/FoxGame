@@ -10,6 +10,8 @@ class Animacao {
     this.larguraSprite = larguraSprite;
     this.alturaSprite = alturaSprite;
     this.frameAtual = 0;
+    this.isBlinking =false;
+    this._backup = imagem;
   }
   
     exibe(){
@@ -17,12 +19,22 @@ class Animacao {
     
     this.anima();
   }
-  
+  blink(){
+    this.isBlinking = true;
+    this.imagem.filter(INVERT);
+  }
+  stopBlinking(){
+    this.image = this._backup;
+    this.isBlinking = false;
+  }
   anima(){
     this.frameAtual++
     
     if(this.frameAtual >= this.matriz.length - 1) {
-      this.frameAtual = 0
+      this.frameAtual = 0;
     }
+    if (this.isBlinking){
+      this.blink();
+  }
   }
 }

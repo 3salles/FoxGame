@@ -1,12 +1,12 @@
-let imagemgameover, imagemCenarios, imagemPersonagem, imagemInimigo, imagemInimigoGrande, imagemTelaInicial, imagemGameOver;
-let somelemorrer, somdoPulo, somDojogo;
+let imagemgameover, imagemCenarios, imagemPersonagem, imagemInimigo, imagemInimigoGrande, imagemTelaInicial, imagemGameOver, imagemVida;
+let somelemorrer, somdoPulo, somDojogo, somDano, somInicial;
 let InimigoVoador, InimigoGrande, personagem, inimigo;
 let cenarios, pontuacao;
 let fonteTelaInicial, fonteGameOver, jogo, botaoGerenciador, telaInicial, botaoReiniciar;
 let cenas, cenaAtual = 'telaInicial';
-let gameOver;
+let gameOver, vida;
 
-let inimigosAtual = 0; 
+let fita;
 
 const cenarioCount = 5;
 const matrizPersonagem = geraMatrizDePosicoes(1, 4, 45, 35), matrizInimigo  = geraMatrizDePosicoes(7, 4, 104, 104); 
