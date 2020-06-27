@@ -19,7 +19,7 @@ class GameOver {
     text('Pontos: ' + parseInt(pontuacao.pontos) + " Km.", width / 2, height / 2);
   }
   _botao() {
-    botaoReiniciar = new BotaoGerenciador("Reiniciar", width/2, height/7*5);
+    botaoReiniciar = new BotaoReiniciar("Reiniciar", width/2, height/7*5);
     botaoReiniciar.draw();
   }
 }

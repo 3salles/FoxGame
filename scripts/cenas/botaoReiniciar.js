@@ -1,4 +1,4 @@
-class BotaoGerenciador {
+class BotaoReiniciar {
   constructor(texto, x, y) {
     this.texto = texto;
     this.x = x;
@@ -16,5 +16,7 @@ class BotaoGerenciador {
   _alteraCena(){
     this.botao.remove();
     cenaAtual = 'jogo';
+    jogo.setup();
+    loop();
   }
 }
