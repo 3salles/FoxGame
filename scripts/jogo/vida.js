@@ -11,7 +11,7 @@ class Vida {
 
   draw() {
     for (let i = 0; i < this.vidas; i++) {
-      image(imagemVida, this.margem+this.largura*i*1.5+this.margem*2, this.margem +sin(frameCount*(i+5)), this.largura, this.altura)
+      image(imgCoracao, this.margem+this.largura*i*1.5+this.margem*2, this.margem +sin(frameCount*(i+5)), this.largura, this.altura)
     }
 
   }

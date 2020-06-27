@@ -1,14 +1,18 @@
-let imagemgameover, imagemCenarios, imagemPersonagem, imagemInimigo, imagemInimigoGrande, imagemTelaInicial, imagemGameOver, imagemVida;
-let somelemorrer, somdoPulo, somDojogo, somDano, somInicial;
-let InimigoVoador, InimigoGrande, personagem, inimigo;
-let cenarios, pontuacao;
-let fonteTelaInicial, fonteGameOver, jogo, botaoGerenciador, telaInicial, botaoReiniciar;
-let cenas, cenaAtual = 'telaInicial';
-let gameOver, vida, cenariosIntroducao, imagemIntroducao;
-
+let imgVulpes, imgGotinha, imgTroll, imgCacador;//Imagens persongens
+let imgGalinha, imgCoelho, imgCoracao; // Imagens Power Ups
+let imgGameOver, imgCenarios,   imgStart, imgHistoria; // Imagens de telas
+let troll, vulpes, gotinha, cacador; // Personagens
+let galinha, coelho; //Power Ups
+let cenas, cenarios, cenaAtual = 'start', start, gameOver, jogo, historia; // Cenas do jogo
+let pontuacao, vida; // Objetos do jogo
+let botaoGerenciador, botaoReiniciar; // Botões do jogo
+let trilhaPrincipal, trilhaInicial; // Trilhas sonoras do jogo
+let somLevouDano, somMorreu, somdoPulo;// Sons do jogo
+let fonteStart, fonteGameOver; // Fontes de texto
 let fita;
 
-const cenarioCount = 5, introCount = 6;
-const matrizPersonagem = geraMatrizDePosicoes(1, 4, 45, 35), matrizInimigo  = geraMatrizDePosicoes(7, 4, 104, 104); 
-const matrizInimigoVoador = geraMatrizDePosicoes(5, 3, 200, 150), matrizInimigoGrande = geraMatrizDePosicoes(5, 5, 400, 400);
+
+const cenarioCount = 5, historiaCount = 6;
+const matrizVulpes = geradorDeMatriz(1, 4, 45, 35), matrizGotinha  = geradorDeMatriz(7, 4, 104, 104); 
+const matrizTroll = geradorDeMatriz(5, 5, 400, 400), matrizCacador = geradorDeMatriz(2, 3, 170, 222);
 let inimigos = [];

@@ -6,29 +6,29 @@ class Jogo {
 
   setup() {
     cenarios = [];
-    for(let i = 0; i< cenarioCount; i++){cenarios.push(new Cenario(imagemCenarios[i], i*2));}
+    for(let i = 0; i< cenarioCount; i++){cenarios.push(new Cenario(imgCenarios[i], i*2));}
     pontuacao = new Pontuacao();
     vida = new Vida(fita.configuracoes.vidaMaxima,fita.configuracoes.vidaInicial);
-    personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, 30, 90, 110, 43, 36);
+    vulpes = new Personagem(matrizVulpes, imgVulpes, 0, 30, 90, 110, 43, 36);
 
-    const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width - 52, 30, 52, 52, 104, 104, 20);
-    const inimigoVoador = new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width - 52, 200, 100, 75, 200, 150, 20);
-    const inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width, 0, 200, 200, 400, 400, 15);
+    const gotinha = new Inimigo(matrizGotinha, imgGotinha, width - 52, 30, 52, 52, 104, 104, 20);
+    const troll = new Inimigo(matrizTroll, imgTroll, width, 0, 200, 200, 400, 400, 15);
+    const cacador = new Inimigo(matrizCacador, imgCacador, width, 0, 170, 222, 170, 222, 15);
+
     inimigos = [];
-    inimigos.push(inimigo);
-    inimigos.push(inimigoGrande);
-    inimigos.push(inimigoVoador);
+    inimigos.push(gotinha);
+    inimigos.push(troll);
+    inimigos.push(cacador);
 
-    frameRate(10)
-    somDoJogo.loop();
-    somDoJogo.setVolume(0.1);
-
+    frameRate(10);
+    trilhaPrincipal.loop();
+    trilhaPrincipal.setVolume(0.1);
     
   }
 
   keyPressed(key) {
     if (key === 'ArrowUp' || 'Space') {
-      personagem.pula();
+      vulpes.pula();
       somdoPulo.play();
     }
   }
@@ -43,8 +43,8 @@ class Jogo {
     pontuacao.exibe();
     pontuacao.adicionarPonto();
 
-    personagem.exibe();
-    personagem.aplicaGravidade();
+    vulpes.exibe();
+    vulpes.aplicaGravidade();
 
 
     const linhaAtual = this.mapa[this.indice];
@@ -66,14 +66,14 @@ class Jogo {
       
     }
 
-    if (personagem.estaColidindo(inimigo)) {
+    if (vulpes.colidiu(inimigo)) {
       vida.perdeVida();
-      personagem.tornarInvencivel();
-      somDano.play();
+      vulpes.naoLevaDano();
+      somLevouDano.play();
       if(vida.vidas === 0){
       gameOver.draw();
-      somDoJogo.stop();
-      somelemorrer.play();
+      trilhaPrincipal.stop();
+      somMorreu.play();
       noLoop();
       }
     }

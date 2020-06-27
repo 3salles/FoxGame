@@ -1,7 +1,7 @@
 {
   "configuracoes": {
     "vidaMaxima": 3,
-    "vidaInicial": 1
+    "vidaInicial": 3
   },
   "mapa": [{
     "inimigo": 0,
@@ -13,10 +13,27 @@
   },
   {
     "inimigo": 1,
-    "velocidade":40
+    "velocidade":50
   },
   {
     "inimigo": 2,
+    "velocidade":60
+  },
+  {
+    "inimigo": 0,
+    "velocidade":60
+  },
+  {
+    "inimigo": 1,
     "velocidade":40
-  }]
+  },
+  {
+    "inimigo": 1,
+    "velocidade":50
+  },
+  {
+    "inimigo": 2,
+    "velocidade":60
+  }
+]
 }

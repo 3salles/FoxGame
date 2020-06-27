@@ -8,7 +8,7 @@ class GameOver {
 
   _imagemDeFundo() {
     background(0);
-    image(imagemgameover, width / 2 - 200, height-600);
+    image(imgGameOver, width / 2 - 200, height-600);
     fill("fff");
   }
 
@@ -16,7 +16,7 @@ class GameOver {
     textFont(fonteGameOver);
     textAlign(CENTER);
     textSize(100);
-    text('Seus Pontos: ' + parseInt(pontuacao.pontos), width / 2, height / 2);
+    text('Pontos: ' + parseInt(pontuacao.pontos) + " Km.", width / 2, height / 2);
   }
   _botao() {
     botaoReiniciar = new BotaoGerenciador("Reiniciar", width/2, height/7*5);

@@ -7,11 +7,11 @@ class TelaInicial {
   }
 
   _imagemDeFundo() {
-    image(imagemTelaInicial, 0, 0, width, height);
+    image(imgStart, 0, 0, width, height);
   }
 
   _texto() {
-    textFont(fonteTelaInicial);
+    textFont(fonteStart);
     textAlign(CENTER);
     textSize(50);
     text('As aventuras de', width / 2, height / 3);

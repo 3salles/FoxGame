@@ -1,4 +1,4 @@
-function geraMatrizDePosicoes(nLinhas, nColunas, largura, altura) {
+function geradorDeMatriz(nLinhas, nColunas, largura, altura) {
   const matriz = [];
   for (let i = 0; i < nLinhas; i++) {
     for (let j = 0; j < nColunas; j++) {
@@ -9,4 +9,14 @@ function geraMatrizDePosicoes(nLinhas, nColunas, largura, altura) {
     }
   }
   return matriz;
+}
+function escreverTexto(value, size, cor, posX, posY,dropShadow=0){
+  textSize(size);
+  if (dropShadow){
+    fill("black");
+    text(value, posX+dropShadow, posY+dropShadow);
+  }
+  fill(cor);
+  text(value, posX, posY);
+
 }

@@ -1,43 +1,43 @@
 class Personagem extends Animacao {
-  constructor(imagem, matriz, x, y, largura, altura, lSprite, aSprite, somPulo) {
-    super(imagem, matriz, x, y, largura, altura, lSprite, aSprite);
+  constructor(imagem, matriz, x, y, largura, altura, larguraSprite, alturaSprite, somPulo) {
+    super(imagem, matriz, x, y, largura, altura, larguraSprite, alturaSprite);
     
     this.somPulo = somPulo;
-    this.y0 = height-altura-y;
+    this.yInicial = height-altura-y;
     
-    this.vPulo = 0;
+    this.velocidadePulo = 0;
     this.gravidade = 3;
-    this.qntPulos = 2;
+    this.pulosMax = 2;
     this.alturaPulo = 25;
-    this.invencivel = false;
+    this.semDano = false;
   }
   
   pula() {
-    if (this.qntPulos > 0) {
-      this.vPulo = -this.alturaPulo;
-      this.qntPulos--;
+    if (this.pulosMax > 0) {
+      this.velocidadePulo = -this.alturaPulo;
+      this.pulosMax--;
     
     }
   }
   aplicaGravidade() {
-    this.y += this.vPulo;
-    this.vPulo += this.gravidade;
+    this.y += this.velocidadePulo;
+    this.velocidadePulo += this.gravidade;
     
-    if (this.y > this.y0){
-      this.y = this.y0;
-      this.qntPulos = 2;
+    if (this.y > this.yInicial){
+      this.y = this.yInicial;
+      this.pulosMax = 2;
     }
   }
-  tornarInvencivel() {
-    this.invencivel = true;
-    this.isBlinking = true;
+  naoLevaDano() {
+    this.semDano = true;
+    this.piscando = true;
     setTimeout(() => { 
-      this.invencivel = false;
-      this.isBlinking = false; 
+      this.semDano = false;
+      this.piscando = false; 
     }, 1000);
   }
-  estaColidindo(inimigo) {
-    if (this,this.invencivel){ return false;}
+  colidiu(inimigo) {
+    if (this.semDano){ return false;}
   const precisao = .7
   const colisao = collideRectRect(
       this.x,
