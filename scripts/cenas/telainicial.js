@@ -10,13 +10,11 @@ class TelaInicial {
     image(imgStart, 0, 0, width, height);
   }
 
-  _texto() {
+  _texto() { 
     textFont(fonteStart);
-    textAlign(CENTER);
-    textSize(50);
-    text('As aventuras de', width / 2, height / 3);
-    textSize(150);
-    text('Vulpes', width / 2, height / 5 * 3);
+    let tituloCor = [80 + sin(frameCount*0.1)*25, 41, 93 + sin(frameCount*0.1)*25];
+    escreverTexto("Vulpes", width/12+10, tituloCor, width/3.5, height/2-(width/12)+20+5*sin(frameCount*.1), 5);
+    escreverTexto("Aventura", width/12, tituloCor, width/2.5, height/2+5*cos(frameCount*.1), 5);
   }
   _botao() {
     botaoGerenciador.y = height/7*5;
