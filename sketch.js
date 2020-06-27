@@ -5,17 +5,20 @@ function setup() {
   jogo = new Jogo();
   telaInicial = new TelaInicial();
   gameOver = new GameOver();
+  estoria = new Historia();
+  estoria.setup()
   jogo.setup();
   cenas = {
     jogo, 
     telaInicial,
-    gameOver
+    gameOver,
+    estoria
   }
-  botaoGerenciador = new BotaoGerenciador('Iniciar',width/2, height/2);
 }
 
 function keyPressed() {
   jogo.keyPressed(key);
+  introducao.keyPressed(key);
 }
 
 function draw() {

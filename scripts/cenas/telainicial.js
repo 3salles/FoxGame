@@ -19,7 +19,7 @@ class TelaInicial {
     text('Vulpes', width / 2, height / 5 * 3);
   }
   _botao() {
-    botaoGerenciador.y = height/7*5;
+    botaoGerenciador = new BotaoGerenciador("Iniciar", width/2, height/7*5);
     botaoGerenciador.draw();
   }
 }

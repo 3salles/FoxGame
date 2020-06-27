@@ -10,3 +10,13 @@ function geraMatrizDePosicoes(nLinhas, nColunas, largura, altura) {
   }
   return matriz;
 }
+function drawText(value, size, cor, posX, posY,dropShadow=0){
+  textSize(size);
+  if (dropShadow){
+      fill("black");
+      text(value, posX+dropShadow, posY+dropShadow);
+  }
+  fill(cor);
+  text(value, posX, posY);
+
+}

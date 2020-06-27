@@ -10,14 +10,18 @@ class Jogo {
     pontuacao = new Pontuacao();
     vida = new Vida(fita.configuracoes.vidaMaxima,fita.configuracoes.vidaInicial);
     personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, 30, 90, 110, 43, 36);
+    fugindo = new Inimigo(matrizFugindo, imagemFugindo, 0, 30, 90, 110, 43, 36);
 
     const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width - 52, 30, 52, 52, 104, 104, 20);
     const inimigoVoador = new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width - 52, 200, 100, 75, 200, 150, 20);
     const inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width, 0, 200, 200, 400, 400, 15);
+    const inimigoHunter = new Inimigo(matrizInimigoHunter, imagemHunter, width, 0, 67.5, 111, 170, 222, 15);
     inimigos = [];
     inimigos.push(inimigo);
     inimigos.push(inimigoGrande);
     inimigos.push(inimigoVoador);
+    inimigos.push(inimigoHunter);
+    inimigos.push(fugindo);
 
     frameRate(10)
     somDoJogo.loop();
