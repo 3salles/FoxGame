@@ -23,6 +23,9 @@ class Vida {
   }
 
   perdeVida() {
+    if (this.vidas > 1){
+      somLevouDano.play();
+    }
     this.vidas--
   }
 }

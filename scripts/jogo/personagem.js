@@ -28,13 +28,13 @@ class Personagem extends Animacao {
       this.pulosMax = 2;
     }
   }
-  naoLevaDano() {
+  naoLevaDano(tempo) {
     this.semDano = true;
     this.piscando = true;
     setTimeout(() => { 
       this.semDano = false;
       this.piscando = false; 
-    }, 1000);
+    }, tempo);
   }
   colidiu(inimigo) {
     if (this.semDano){ return false;}

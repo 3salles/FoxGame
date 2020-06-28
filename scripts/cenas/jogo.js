@@ -2,6 +2,8 @@ class Jogo {
   constructor() {
     this.indice = 0;
     this.mapa = fita.mapa;
+    this.indiceBonus = 0;
+    this.mapaBonus = fita.bonus;
   }
 
   setup() {
@@ -21,15 +23,22 @@ class Jogo {
     const gotinha = new Inimigo(matrizGotinha, imgGotinha, width - 52, 30, 52, 52, 104, 104, 20);
     const troll = new Inimigo(matrizTroll, imgTroll, width, 0, 200, 200, 400, 400, 15);
     const cacador = new Inimigo(matrizCacador, imgCacador, width, 0, 170, 222, 170, 222, 15);
-    const coelho = new Inimigo(matrizCoelho, imgCoelho, width, 0, 100, 119, 200, 238, 20);
-    const galinha = new Inimigo(matrizGalinha, imgGalinha, width, 0, 148, 110, 148, 110, 15);
+    //const coelho = new Inimigo(matrizCoelho, imgCoelho, width, 0, 100, 119, 200, 238, 20);
+    //const galinha = new Inimigo(matrizGalinha, imgGalinha, width, 0, 148, 110, 148, 110, 15);
 
     inimigos = [];
     inimigos.push(gotinha);
     inimigos.push(troll);
     inimigos.push(cacador);
-    inimigos.push(coelho);
-    inimigos.push(galinha);
+    //inimigos.push(coelho);
+    //inimigos.push(galinha);
+
+    const coelho = new Bonus(matrizCoelho, imgCoelho, width, 200, 100, 119, 200, 238, 20);
+    const galinha = new Bonus(matrizGalinha, imgGalinha, width, 200, 148, 110, 148, 110, 15);
+
+    poderes = [];
+    poderes.push(coelho);
+    poderes.push(galinha);
 
     frameRate(10);
     trilhaSonora.loop();
@@ -88,8 +97,7 @@ class Jogo {
     inimigo.velocidade = linhaAtual.velocidade;
     inimigo.exibe();
     inimigo.move();
-
-
+    
     if (inimigoVisivel) {
       this.indice++;
       inimigo.aparece();
@@ -97,17 +105,39 @@ class Jogo {
         this.indice = 0;
       }
     }
-
-
     if (vulpes.colidiu(inimigo)) {
       vida.perdeVida();
-      vulpes.naoLevaDano();
-      somLevouDano.play();
+      vulpes.naoLevaDano(1000);
       if(vida.vidas === 0){
-      gameOver.draw();
-      trilhaSonora.stop();
-      somMorreu.play();
-      noLoop();
+        gameOver.draw();
+        trilhaSonora.stop();
+        somMorreu.play();
+        noLoop();
+      }
+    }
+
+    const linhaBonus = this.mapaBonus[this.indiceBonus];
+    const poder = poderes[linhaBonus.poder];
+    const poderVisivel = poder.x < -poder.largura;
+    poder.velocidade = linhaBonus.velocidade;
+    poder.exibe();
+    poder.move();
+
+    if (poderVisivel) {
+      this.indiceBonus++;
+      poder.aparece();
+      if (this.indiceBonus > this.mapaBonus.length - 1) {
+        this.indiceBonus = 0;
+      }
+    }
+    if (vulpes.colidiu(poder)) {
+      somPowerUp.play();
+      pontuacao.adicionarBonus(50);
+      poder.some();
+      if (poder.imagem == imgCoelho){
+        vida.ganhaVida();
+      } else if (poder.imagem == imgGalinha){
+        vulpes.naoLevaDano(3000);
       }
     }
   }

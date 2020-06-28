@@ -1,48 +1,82 @@
 {
   "configuracoes": {
-    "vidaMaxima": 10,
+    "vidaMaxima": 5,
     "vidaInicial": 3
   },
-  "mapa": [{
-    "inimigo": 0,
-    "velocidade":40
-  },
-  {
-    "inimigo": 1,
-    "velocidade":40
-  },
-  {
-    "inimigo": 1,
-    "velocidade":50
-  },
-  {
-    "inimigo": 3,
-    "velocidade":60
-  },
-  {
-    "inimigo": 2,
-    "velocidade":60
-  },
-  {
-    "inimigo": 1,
-    "velocidade":40
-  },
-  {
-    "inimigo": 4,
-    "velocidade":50
-  },
-  {
-    "inimigo": 2,
-    "velocidade":60
-  }
-],
-  "bonus": [{
-    "bonus": 0,
-    "velocidade": 40
-  },
-  {
-    "bonus": 1,
-    "velocidade": 40
-  }
-]
+  "mapa": [    
+    {"inimigo":1,"velocidade":60},
+    {"inimigo":1,"velocidade":50},
+    {"inimigo":0,"velocidade":60},
+    {"inimigo":0,"velocidade":60},
+    {"inimigo":2,"velocidade":56},
+    {"inimigo":1,"velocidade":70},
+    {"inimigo":0,"velocidade":56},
+    {"inimigo":1,"velocidade":70},
+    {"inimigo":0,"velocidade":60},
+    {"inimigo":2,"velocidade":88},
+    {"inimigo":0,"velocidade":50},
+    {"inimigo":1,"velocidade":57},
+    {"inimigo":0,"velocidade":60},
+    {"inimigo":0,"velocidade":80},
+    {"inimigo":0,"velocidade":57},
+    {"inimigo":2,"velocidade":50},
+    {"inimigo":0,"velocidade":60},
+    {"inimigo":0,"velocidade":54},
+    {"inimigo":0,"velocidade":60},
+    {"inimigo":2,"velocidade":60},
+    {"inimigo":1,"velocidade":50},
+    {"inimigo":1,"velocidade":60},
+    {"inimigo":2,"velocidade":70},
+    {"inimigo":1,"velocidade":50},
+    {"inimigo":2,"velocidade":50},
+    {"inimigo":1,"velocidade":64},
+    {"inimigo":0,"velocidade":55},
+    {"inimigo":0,"velocidade":80},
+    {"inimigo":2,"velocidade":60},
+    {"inimigo":1,"velocidade":56},
+    {"inimigo":1,"velocidade":80},
+    {"inimigo":2,"velocidade":56},
+    {"inimigo":1,"velocidade":70},
+    {"inimigo":0,"velocidade":54},
+    {"inimigo":2,"velocidade":80},
+    {"inimigo":2,"velocidade":50},
+    {"inimigo":1,"velocidade":57},
+    {"inimigo":0,"velocidade":78},
+    {"inimigo":1,"velocidade":80},
+    {"inimigo":0,"velocidade":57},
+    {"inimigo":2,"velocidade":50},
+    {"inimigo":0,"velocidade":60},
+    {"inimigo":0,"velocidade":54},
+    {"inimigo":0,"velocidade":80},
+    {"inimigo":2,"velocidade":64},
+    {"inimigo":1,"velocidade":80},
+    {"inimigo":1,"velocidade":54},
+    {"inimigo":0,"velocidade":62},
+    {"inimigo":0,"velocidade":80},
+    {"inimigo":2,"velocidade":60}],
+  "bonus": [{"poder":1,"velocidade":30},
+    {"poder":0,"velocidade":40},
+    {"poder":0,"velocidade":30},
+    {"poder":1,"velocidade":40},
+    {"poder":0,"velocidade":50},
+    {"poder":0,"velocidade":30},
+    {"poder":1,"velocidade":50},
+    {"poder":1,"velocidade":40},
+    {"poder":0,"velocidade":30},
+    {"poder":1,"velocidade":40},
+    {"poder":0,"velocidade":30},
+    {"poder":1,"velocidade":50},
+    {"poder":0,"velocidade":30},
+    {"poder":1,"velocidade":40},
+    {"poder":1,"velocidade":30},
+    {"poder":0,"velocidade":40},
+    {"poder":0,"velocidade":50},
+    {"poder":1,"velocidade":40},
+    {"poder":1,"velocidade":30},
+    {"poder":1,"velocidade":30},
+    {"poder":1,"velocidade":40},
+    {"poder":0,"velocidade":50},
+    {"poder":0,"velocidade":30},
+    {"poder":1,"velocidade":40},
+    {"poder":1,"velocidade":40}]
 }

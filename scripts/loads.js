@@ -35,8 +35,7 @@ function preload() {
 
   // Sons
   trilhaSonora = loadSound('sons/trilhaSonora.mp3');
-  trilhaPrincipal = loadSound('sons/trilha-jogo1.mp3');
-  trilhaInicial = loadSound('sons/trilha-jogo2.mp3');
+  somPowerUp = loadSound('sons/bonus.mp3');
   somdoPulo = loadSound('sons/somPulo.mp3');
   somMorreu = loadSound('sons/gameover.mp3');
   somLevouDano = loadSound('sons/damage.mp3');
