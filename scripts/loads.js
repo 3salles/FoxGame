@@ -17,8 +17,10 @@ function preload() {
   imgCoracao = loadImage('imagens/assets/coracao.png')
   imgGameOver = loadImage('imagens/assets/game-over.png');
   imgStart = loadImage('imagens/cenario/telaInicial.png');
+  imgFinal = loadImage('imagens/cenario/final/outono.png');
 
   // Sons
+  trilhaSonora = loadSound('sons/trilhaSonora.mp3');
   trilhaPrincipal = loadSound('sons/trilha-jogo1.mp3');
   trilhaInicial = loadSound('sons/trilha-jogo2.mp3');
   somdoPulo = loadSound('sons/somPulo.mp3');
@@ -40,6 +42,12 @@ function preload() {
     etapa3_2: loadImage('imagens/inimigos/troll.png'),
     etapa4_1: loadImage('imagens/bonus/chicken.png'),
     etapa4_2: loadImage('imagens/bonus/coelho.png')
+  }
+  
+  //Arquivos para o final
+  assetsFinal = {
+    etapa1: loadImage('imagens/cenario/final/outono.png'),
+    etapa2: loadImage('imagens/personagem/correndo.png')
   }
 
 }

@@ -21,8 +21,8 @@ class Jogo {
     inimigos.push(cacador);
 
     frameRate(10);
-    trilhaPrincipal.loop();
-    trilhaPrincipal.setVolume(0.1);
+    trilhaSonora.loop();
+    trilhaSonora.setVolume(0.1);
     
   }
 
@@ -72,7 +72,7 @@ class Jogo {
       somLevouDano.play();
       if(vida.vidas === 0){
       gameOver.draw();
-      trilhaPrincipal.stop();
+      trilhaSonora.stop();
       somMorreu.play();
       noLoop();
       }
