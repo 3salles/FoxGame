@@ -15,6 +15,6 @@ class BotaoGerenciador {
   
   _alteraCena(){
     this.botao.remove();
-    cenaAtual = 'jogo';
+    cenaAtual = 'historia';
   }
 }

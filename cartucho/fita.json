@@ -35,5 +35,22 @@
     "inimigo": 2,
     "velocidade":60
   }
-]
+],
+  "bonus": [{
+    "inimigo": 0,
+    "velocidade": 40
+  },
+  {
+    "inimigo": 1,
+    "velocidade": 40
+  }
+],
+  "introducao": [{
+    "inimigo": 0,
+    "velocidade": 40
+  },
+  {
+    "inimigo": 1,
+    "velocidade": 40
+  }]
 }

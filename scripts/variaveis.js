@@ -3,7 +3,7 @@ let imgGalinha, imgCoelho, imgCoracao; // Imagens Power Ups
 let imgGameOver, imgCenarios,   imgStart, imgHistoria; // Imagens de telas
 let troll, vulpes, gotinha, cacador; // Personagens
 let galinha, coelho; //Power Ups
-let cenas, cenarios, cenaAtual = 'start', start, gameOver, jogo, historia; // Cenas do jogo
+let cenas, cenarios, cenaAtual = 'start', start, gameOver, jogo, cenariosHistoria; // Cenas do jogo
 let pontuacao, vida; // Objetos do jogo
 let botaoGerenciador, botaoReiniciar; // Botões do jogo
 let trilhaPrincipal, trilhaInicial; // Trilhas sonoras do jogo

@@ -31,4 +31,15 @@ function preload() {
 
   //JSON
   fita =  loadJSON('cartucho/fita.json');
+
+  //Arquivos para a historia
+  assetsHistoria = {
+    etapa1: loadImage('imagens/inimigos/hunter.png'),
+    etapa2: loadImage('imagens/personagem/correndo.png'),
+    etapa3_1: loadImage('imagens/inimigos/gotinha.png'),
+    etapa3_2: loadImage('imagens/inimigos/troll.png'),
+    etapa4_1: loadImage('imagens/bonus/chicken.png'),
+    etapa4_2: loadImage('imagens/bonus/coelho.png')
+  }
+
 }
