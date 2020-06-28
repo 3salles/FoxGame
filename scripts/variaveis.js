@@ -16,4 +16,5 @@ let fita;
 const cenarioCount = 5, historiaCount = 6;
 const matrizVulpes = geradorDeMatriz(1, 4, 45, 35), matrizGotinha  = geradorDeMatriz(7, 4, 104, 104); 
 const matrizTroll = geradorDeMatriz(5, 5, 400, 400), matrizCacador = geradorDeMatriz(2, 3, 170, 222);
+const matrizCoelho = geradorDeMatriz(3, 3, 200, 238), matrizGalinha = geradorDeMatriz(6, 4, 148, 110);
 let inimigos = [];

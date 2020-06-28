@@ -16,11 +16,11 @@
     "velocidade":50
   },
   {
-    "inimigo": 2,
+    "inimigo": 3,
     "velocidade":60
   },
   {
-    "inimigo": 0,
+    "inimigo": 2,
     "velocidade":60
   },
   {
@@ -28,7 +28,7 @@
     "velocidade":40
   },
   {
-    "inimigo": 1,
+    "inimigo": 4,
     "velocidade":50
   },
   {

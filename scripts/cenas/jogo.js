@@ -14,11 +14,15 @@ class Jogo {
     const gotinha = new Inimigo(matrizGotinha, imgGotinha, width - 52, 30, 52, 52, 104, 104, 20);
     const troll = new Inimigo(matrizTroll, imgTroll, width, 0, 200, 200, 400, 400, 15);
     const cacador = new Inimigo(matrizCacador, imgCacador, width, 0, 170, 222, 170, 222, 15);
+    const coelho = new Inimigo(matrizCoelho, imgCoelho, width, 0, 100, 119, 200, 238, 20);
+    const galinha = new Inimigo(matrizGalinha, imgGalinha, width, 0, 148, 110, 148, 110, 15);
 
     inimigos = [];
     inimigos.push(gotinha);
     inimigos.push(troll);
     inimigos.push(cacador);
+    inimigos.push(coelho);
+    inimigos.push(galinha);
 
     frameRate(10);
     trilhaSonora.loop();
