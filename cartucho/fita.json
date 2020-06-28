@@ -1,6 +1,6 @@
 {
   "configuracoes": {
-    "vidaMaxima": 3,
+    "vidaMaxima": 10,
     "vidaInicial": 3
   },
   "mapa": [{
@@ -37,20 +37,12 @@
   }
 ],
   "bonus": [{
-    "inimigo": 0,
+    "bonus": 0,
     "velocidade": 40
   },
   {
-    "inimigo": 1,
+    "bonus": 1,
     "velocidade": 40
   }
-],
-  "introducao": [{
-    "inimigo": 0,
-    "velocidade": 40
-  },
-  {
-    "inimigo": 1,
-    "velocidade": 40
-  }]
+]
 }

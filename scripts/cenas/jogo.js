@@ -5,8 +5,15 @@ class Jogo {
   }
 
   setup() {
-    cenarios = [];
-    for(let i = 0; i< cenarioCount; i++){cenarios.push(new Cenario(imgCenarios[i], i*2));}
+    cenariosFase1 = [];
+    for(let i = 0; i< cenarioCount; i++){cenariosFase1.push(new Cenario(imgFase1[i], i*2));}
+    cenariosFase2 = [];
+    for(let i = 0; i<cenarioCount2; i++){cenariosFase2.push(new Cenario(imgFase2[i], i*2));}
+    cenariosFase3 = [];
+    for(let i = 0; i<cenarioCount3; i++){cenariosFase3.push(new Cenario(imgFase3[i], i*2));}
+    cenariosFase4 = [];
+    for(let i = 0; i<cenarioCount; i++){cenariosFase4.push(new Cenario(imgFase4[i], i*2));}
+
     pontuacao = new Pontuacao();
     vida = new Vida(fita.configuracoes.vidaMaxima,fita.configuracoes.vidaInicial);
     vulpes = new Personagem(matrizVulpes, imgVulpes, 0, 30, 90, 110, 43, 36);
@@ -39,9 +46,33 @@ class Jogo {
 
   draw() {
     for(let i = 0; i<cenarioCount; i++){
-      let cenario = cenarios[i];
-      cenario.exibe();
-      cenario.move();
+      let cenarioFase1 = cenariosFase1[i];
+      cenarioFase1.exibe();
+      cenarioFase1.move();
+    }
+    if (pontuacao.pontos > 2500){
+      for (let i=0; i<cenarioCount2; i++){
+        let cenarioFase2 = cenariosFase2[i];
+        cenarioFase2.exibe();
+        cenarioFase2.move();
+      }
+    }
+    if (pontuacao.pontos > 5000){
+      for (let i=0; i<cenarioCount3; i++){
+        let cenarioFase3 = cenariosFase3[i];
+        cenarioFase3.exibe();
+        cenarioFase3.move();
+      }
+    }
+    if (pontuacao.pontos > 7500){
+      for (let i=0; i<cenarioCount; i++){
+        let cenarioFase4 = cenariosFase4[i];
+        cenarioFase4.exibe();
+        cenarioFase4.move();
+      }
+    }
+    if (pontuacao.pontos >= 10000){
+      cenaAtual = 'final';
     }
     vida.draw();
     pontuacao.exibe();
@@ -54,11 +85,10 @@ class Jogo {
     const linhaAtual = this.mapa[this.indice];
     const inimigo = inimigos[linhaAtual.inimigo];
     const inimigoVisivel = inimigo.x < -inimigo.largura;
-    
     inimigo.velocidade = linhaAtual.velocidade;
-
     inimigo.exibe();
     inimigo.move();
+
 
     if (inimigoVisivel) {
       this.indice++;
@@ -66,9 +96,8 @@ class Jogo {
       if (this.indice > this.mapa.length - 1) {
         this.indice = 0;
       }
-
-      
     }
+
 
     if (vulpes.colidiu(inimigo)) {
       vida.perdeVida();

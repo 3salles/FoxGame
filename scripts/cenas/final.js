@@ -16,6 +16,7 @@ class TelaFinal {
       this.etapa++;
       if(this.etapa === 2){
         cenaAtual = "start"
+        botaoGerenciador = new BotaoGerenciador('Recomeçar',width/2, height/2);
       }
     }
   }
@@ -30,5 +31,4 @@ class TelaFinal {
     const textoContinuar = "Aperte ENTER para continuar"
     escreverTexto(textoContinuar, 50, "black", width - textWidth(textoContinuar)-30, 250);
   }
-  
 }

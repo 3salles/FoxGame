@@ -1,13 +1,27 @@
 function preload() {
-  // Imagens
+  // Cenarios
   imgHistoria = [];
   for (let i = 0; i < historiaCount; i++){
     imgHistoria.push(loadImage(`imagens/cenario/intro/layer${i + 1}.png`));
   }
-  imgCenarios = [];
+  imgFase1 = [];
   for(let i = 0; i < cenarioCount; i++){
-    imgCenarios.push(loadImage(`imagens/cenario/fase1/layer${1+i}.png`))
+    imgFase1.push(loadImage(`imagens/cenario/fase1/layer${1+i}.png`));
   }
+  imgFase2 = [];
+  for (let i = 0; i < cenarioCount2; i++){
+    imgFase2.push(loadImage(`imagens/cenario/fase2/layer${i+1}.png`));
+  }
+  imgFase3 = [];
+  for (let i=0; i < cenarioCount3; i++){
+    imgFase3.push(loadImage(`imagens/cenario/fase3/layer${i+1}.png`));
+  }
+  imgFase4 = [];
+  for (let i=0; i<cenarioCount; i++){
+    imgFase4.push(loadImage(`imagens/cenario/fase4/layer${i+1}.png`));
+  }
+
+  // Imagens
   imgVulpes = loadImage('imagens/personagem/correndo.png');
   imgGotinha = loadImage('imagens/inimigos/gotinha.png');
   imgTroll = loadImage('imagens/inimigos/troll.png')

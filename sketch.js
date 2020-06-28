@@ -4,7 +4,7 @@ function setup() {
   trilhaSonora.loop();
   trilhaSonora.setVolume(0.1);
   inimigos = [];
-  cenarios = [];
+  bonus = [];
   start = new TelaInicial();
   jogo = new Jogo();
   historia = new Historia();
