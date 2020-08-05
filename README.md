@@ -5,7 +5,7 @@ Este jogo foi feito durante a semana de #ImersaoGameDev da Alura.
 ![Badge](https://img.shields.io/badge/version-beta-%23E0234E)
 ![Badge](https://img.shields.io/badge/desktop-conclued-%2300C58E)
 ![Badge](https://img.shields.io/badge/mobile-working-%23F86001)
-![Badge](https://img.shields.io/badge/lincense-MIT-green)
+![Badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
 <p align="center">
  <a href="#história">História</a> •
