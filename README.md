@@ -5,11 +5,13 @@ Este jogo foi feito durante a semana de #ImersaoGameDev da Alura.
 ![Badge](https://img.shields.io/badge/version-beta-%23E0234E)
 ![Badge](https://img.shields.io/badge/desktop-conclued-%2300C58E)
 ![Badge](https://img.shields.io/badge/mobile-working-%23F86001)
+![Badge](/apm/l/:packageName)
 
 <p align="center">
  <a href="#história">História</a> •
  <a href="#como-jogar">Como Jogar</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#autora">Autora</a>
 </p>
 
 ## **História**
@@ -30,3 +32,11 @@ Acesse o jogo em: https://3salles.github.io/FoxGame/
 ## **Tecnologias**
 Este jogo foi feito usando a biblioteca P5.js. Para fazer a animação dos sprites, é preciso que o movimento esteja em uma só imagem. Dentro do arquivo helper.js, tem uma função chamada geradorDeMatriz. Ela é usada para pegar qualquer imagem de sprite e ler a posição de cada um, sem precisar fazer cálculos. A ordem dos parâmetos são: **número de linhas**, **número de colunas**, **largura da imagem individual do personagem** e **altura da imagem individual do personagem**.
 Para saber a altura e largura da imagem do personagem, basta pegar a altura da imagem e dividir pelo número de linhas; e a largura da imagem e dividir pelo números de linhas.
+
+## **Autora**
+Entre em contato!
+[![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/JoyceQuerubino)](https://github.com/3salles)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/joyce-querubino/)](https://www.linkedin.com/in/beatriz-salles-b701a31a6/)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:joycequerubino5@gmail.com)](mailto:beatrizsallesss@gmail.com)
+
+
