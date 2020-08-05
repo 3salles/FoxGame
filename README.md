@@ -1,19 +1,27 @@
+ ![Badge](https://img.shields.io/badge/version-beta-%23E0234E)
+ ![Badge](https://img.shields.io/badge/desktop-conclued-%2300C58E)
+ ![Badge](https://img.shields.io/badge/mobile-working-%23F86001)
+ ![Badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
-![Badge](https://img.shields.io/badge/version-beta-%23E0234E)
-![Badge](https://img.shields.io/badge/desktop-conclued-%2300C58E)
-![Badge](https://img.shields.io/badge/mobile-working-%23F86001)
-![Badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
+<p align="center">
+    <a href="README-en.md">Inglês</a>
+    ·
+    <a href="README.md">Português</a>
+ </p>
+ 
 # Vulpes Aventura
 
 Este jogo foi feito durante a semana de #ImersaoGameDev da Alura.
 
-<p align="center">
- <a href="#história">História</a> •
- <a href="#como-jogar">Como Jogar</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#autora">Autora</a>
-</p>
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Tecnologias](#tecnologias)
+   * [História](#história)
+   * [Como Jogar](#como-jogar)
+   * [Autora](#autora)
+<!--te-->
 
 ## **História**
 Vulpes é uma raposa que teve sua floresta invadida por caçadores, então ele foge em busca de uma
