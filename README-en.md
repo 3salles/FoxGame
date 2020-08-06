@@ -5,9 +5,9 @@
 
 
 <p align="center">
-    <a href="README-en.md">Inglês</a>
+    <a href="README-en.md">English</a>
     ·
-    <a href="README.md">Português</a>
+    <a href="README.md">Portuguese</a>
  </p>
  
 # Vulpes Adventure
