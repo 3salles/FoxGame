@@ -20,6 +20,7 @@ Tabela de conteúdos
    * [Tecnologias](#tecnologias)
    * [História](#história)
    * [Como Jogar](#como-jogar)
+   * [Features](#features)
    * [Autora](#autora)
 <!--te-->
 
@@ -42,8 +43,13 @@ Acesse o jogo em: https://3salles.github.io/FoxGame/
 Este jogo foi feito usando a biblioteca P5.js. Para fazer a animação dos sprites, é preciso que o movimento esteja em uma só imagem. Dentro do arquivo helper.js, tem uma função chamada geradorDeMatriz. Ela é usada para pegar qualquer imagem de sprite e ler a posição de cada um, sem precisar fazer cálculos. A ordem dos parâmetos são: **número de linhas**, **número de colunas**, **largura da imagem individual do personagem** e **altura da imagem individual do personagem**.<br>
 Para saber a altura e largura da imagem do personagem, basta pegar a altura da imagem e dividir pelo número de linhas; e a largura da imagem e dividir pelo números de linhas.
 
+## Features
+
+- [x] Jogo para computador
+- [ ] Modo infinito
+- [ ] Jogo para celular
+
 ## **Autora**
-Entre em contato!<br>
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/3salles)](https://github.com/3salles)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/beatriz-salles-b701a31a6)](https://www.linkedin.com/in/beatriz-salles-b701a31a6/)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:beatrizsallesss@gmail.com)](mailto:beatrizsallesss@gmail.com)
